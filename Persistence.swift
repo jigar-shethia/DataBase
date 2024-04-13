@@ -8,7 +8,7 @@
 import CoreData
 
 final class PersistenceController {
-    static let shared = PersistenceController()
+    public static let shared = PersistenceController()
     
     let container: NSPersistentContainer
     let viewContext: NSManagedObjectContext
