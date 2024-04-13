@@ -16,6 +16,7 @@ public protocol TaskRepository {
 }
 
 public final class TaskRepositoryImplementation :TaskRepository {
+    public init() { }
     
     private let managedObjectContext: NSManagedObjectContext = PersistenceController.shared.viewContext
     
