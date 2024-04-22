@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 public protocol TaskRepository {
-    func get(isCompleted:Bool) -> AnyPublisher<Result<[Task], TaskRepositoryError>,Never>
+     func get(isCompleted:Bool) -> AnyPublisher<Result<[Task], TaskRepositoryError>,Never>
      func add(task:Task) -> AnyPublisher<Result<Bool,TaskRepositoryError>,Never>
      func update(task:Task) ->  AnyPublisher<Result<Bool,TaskRepositoryError>,Never>
      func delete(task:Task) ->  AnyPublisher<Result<Bool,TaskRepositoryError>,Never>
